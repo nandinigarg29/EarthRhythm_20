@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General Styling */
+        body {
+            background-color: #fef7e3; /* Light yellow background */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Logo Section */
+        .logo-section {
+            text-align: center;
+            background-color: #fef7e3;
+            padding: 15px 0;
+        }
+
+        .logo-section img {
+            max-width: 70px;
+        }
+
+        .logo-section h1 {
+            color: #3e3e3e;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 5px 0 0;
+        }
+
+        .logo-section h2 {
+            color: #a22a29;
+            font-size: 12px;
+            margin-top: 2px;
+        }
+
+        /* Product Image Section */
+        .product-image-container {
+            background-color: #d9eecb; /* Soft green background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0; /* No padding */
+            margin: 0; /* No margin */
+            width: 100%;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Product Details Section */
+        .product-details {
+            background-color: #fef7e3;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        .product-details h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #3e3e3e;
+            margin-bottom: 5px;
+        }
+
+        .product-details .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-details .mrp {
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Added Button Yellow Bar */
+        .added-bar {
+            background-color: #ffeb3b; /* Exact yellow color */
+            color: #3e3e3e;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+
+        /* Product Information Section */
+        .product-info {
+            background-color: #fef7e3;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #ddd;
+        }
+
+        .product-info h4 {
+            color: #3e3e3e;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Bottom Menu */
+        .bottom-menu {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #d9d9d9;
+            border-top: 1px solid #ccc;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .bottom-menu a {
+            display: inline-block;
+            width: 20%;
+            text-align: center;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px 0;
+            text-decoration: none;
+        }
+
+        .bottom-menu .active {
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+      <img width="200" src="Logo.png" alt="Earth Rhythm Logo">
+      <h3>#Beautyforall</h3>
+    </div>
+  </header>
+
+    <!-- Product Image Section -->
+    <div class="product-image-container">
+        <img src="1.webp" alt="Product Image" class="product-image">
+    </div>
+
+    <!-- Product Details Section -->
+    <div class="product-details">
+        <h3>Moisturiser</h3>
+        <div class="price">Rs 1,500.00</div>
+        <p class="mrp">MRP incl. of all taxes</p>
+    </div>
+
+    <!-- Added Yellow Bar -->
+    <div class="added-bar">
+        ADDED
+    </div>
+
+    <!-- Product Information Section -->
+    <div class="product-info">
+        <h4>About This Product</h4>
+        <p>
+            This product is made with the finest ingredients and designed to give you a glowing and healthy look. It works for all skin types and has been dermatologically tested to ensure safety and effectiveness.
+        </p>
+        <p>
+            Use regularly for best results. Store in a cool, dry place and keep away from direct sunlight.
+        </p>
+    </div>
+    <!-- Navbar -->
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="menu.html">Menu</a>
+    <a href="shopping-bag.html">Shoppingbag</a>
+    <a href="profile.html">Profile</a>
+  </div>
+
+</body>
+</html>

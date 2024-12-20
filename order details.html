@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FAF7E8;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+        
+        .sub-logo {
+            font-size: 12px;
+            color: #BD4F4A;
+            text-align: center;
+            margin-top: -8px;
+        }
+        .order-details {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .delivery-info {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .product-box {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+        }
+        .product-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .product-item:last-child {
+            border-bottom: none;
+        }
+        .product-image img {
+            width: 80px;
+            height: auto;
+        }
+        .product-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .product-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .product-price {
+            color: #555;
+        }
+        .summary {
+            margin-top: 20px;
+            padding: 10px 0;
+        }
+        .summary div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        .total {
+            font-weight: bold;
+        }
+        .footer-nav {
+            background-color: #DAD9E0;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+        <a href="home.html">
+      <img width="200" src="Logo.png" alt="Earth Rhythm Logo"></a>
+    
+    </div>
+  </header>
+  
+     
+
+        <!-- Order Details -->
+        <div class="order-details">
+            <div>Order No. 5729474883</div>
+            <div>Purchase Date 15 Nov, 2024</div>
+        </div>
+        <div class="delivery-info">Delivered on 20 Nov, 2024</div>
+
+        <!-- Product List -->
+        <div class="product-box">
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="1.webp" alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <div class="product-name">Product Name</div>
+                    <div class="product-price">Rs 1,500.00</div>
+                </div>
+                <div>X</div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="2.jpg.webp" alt="Product 2">
+                </div>
+                <div class="product-details">
+                    <div class="product-name">Product Name</div>
+                    <div class="product-price">Rs 1,700.00</div>
+                </div>
+                <div>X</div>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="summary">
+            <div>
+                <span>2 Items</span>
+                <span>Rs 3,200.00</span>
+            </div>
+            <div>
+                <span>Shipping Price</span>
+                <span>200</span>
+            </div>
+            <div class="total">
+                <span>Total</span>
+                <span>Rs 3,400.00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Navigation -->
+    <div class="footer-nav">
+        <div><a href="home.html">Home</a></div>
+        <div><a href="search.html">search</a></div>
+        <div><a href="menu.html">menu</a></div>
+        <div><a href="shopping-bag.html">Shopping-bag</a></div>
+        <div><a href="profile.html">Profile</a></div>
+    </div>
+
+    <!-- Bootstrap JS (Optional for interaction) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

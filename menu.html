@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fdf6e3; /* Light yellow background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-bottom: 60px; /* Prevent content overlap with footer */
+        }
+
+        /* Header styles */
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .tabs span {
+            font-size: 18px;
+            color: #666;
+            cursor: pointer;
+        }
+
+        .tabs .active {
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* Product list styles */
+        .product-list {
+            margin: 0 20px;
+        }
+
+        .product-list li {
+            list-style: none;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* Footer styles */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #CFD7E4; /* Light grey background for footer */
+            padding: 20px 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer a.active {
+            color: #000; /* Highlighted active link color */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+     <!-- Header Section -->
+  <header class="header">
+    <div class="logo">
+        <a href="home.html">
+      <img width="200" src="Logo.png" alt="Earth Rhythm Logo"></a>
+    
+    </div>
+  </header>
+
+<div class="header">
+   
+    <div class="tabs">
+        <span class="active">Face</span>
+        <span><a href="menu2.html"></a>Hair</span>
+        <span>Bath & Body</span>
+        </div>
+</div>
+
+<div class="product-list">
+    <ul>
+        <li><a href="products.html">Protection</a></li>
+        <li><a href="products.html">Face Moisturizer</li>
+        <li><a href="products.html">Face Serum</a></li>
+        <li><a href="products.html">Face Cleanser</a></li>
+        <li><a href="products.html">Cleansing Balms</a></li>
+        <li><a href="products.html">Face Gel</a></li>
+    </ul>
+</div>
+
+<div class="footer">
+    <a href="home.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="shopping-bag.html">Shopping Bag</a>
+    <a href="profile.html">Profile</a>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

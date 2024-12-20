@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Footer styles */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #CFD7E4; /* Light grey background for the footer */
+    padding: 20px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensures it stays on top */
+}
+  /* Set the background color for the entire page */
+  body {
+            background-color: #FFF8DB; /* Light yellow shade */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+/* Footer items */
+.footer div {
+    text-align: center;
+    font-size: 14px;
+    color: #666; /* Inactive menu item color */
+    cursor: pointer;
+    flex: 1; /* Distributes space evenly between menu items */
+}
+
+/* Footer links */
+.footer div a {
+    text-decoration: none;
+    color: inherit; /* Inherits text color */
+}
+
+/* Active link styles */
+.footer div.active  {
+    color: #000; /* Highlighted active link color */
+    font-weight: bold;
+}
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      flex: 1;
+      padding-bottom: 70px; /* Space for bottom menu */
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap; /* Allows wrapping to the next row */
+      margin: 0;
+      padding: 0;
+    }
+    .product-item {
+      width: 50%; /* 2 products per row */
+      border: 1px solid #000; /* Black border */
+      margin: 0; /* No gutter space */
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .product-item img {
+      width: 100%; /* Full width */
+      height: auto; /* Maintain aspect ratio */
+    }
+    .product-text {
+      background-color: #ffd700; /* Yellow background */
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product-text span {
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+    }
+    .product-text .add-to-cart {
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .bottom-menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #e0e5e8;
+      border-top: 1px solid #ccc;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 60px;
+      z-index: 1000;
+    }
+    .bottom-menu a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      text-align: center;
+    }
+    .bottom-menu a:hover {
+      color: #007bff;
+    }
+    .bottom-menu .menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .menu-icon {
+      font-size: 18px;
+    }
+
+    
+  </style>
+</head>
+<body>
+   <!-- Header Section -->
+   <header class="header">
+    <div class="logo">
+      <a href="home.html">
+      <img width="200" src="Logo.png" alt="Earth Rhythm Logo"></a>
+  
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="container">
+      <h1 class="text-center mt-3">Products</h1>
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-item">
+          <img src="4.jpg.webp" alt="Product 1">
+          <div class="product-text">
+            <span>Skin Tint<br>Rs 1,500.00</span>
+            <span class="add-to-cart">+</span>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-item">
+          <img src="3.jpg.webp" alt="Product 2">
+          <div class="product-text">
+            <span>Tinted Lotion<br>Rs 1,700.00</span>
+            <span class="add-to-cart">+</span>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-item">
+          <img src="7.jpg.webp" alt="Product 3">
+          <div class="product-text">
+            <span>Face Serum<br>Rs 1,500.00</span>
+            <span class="add-to-cart">+</span>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-item">
+          <img src="5.png.webp" alt="Product 4">
+          <div class="product-text">
+            <span>Lip Butter<br>Rs 1,700.00</span>
+            <span class="add-to-cart">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div><a href="home.html">Home</a></div>
+    <div><a href="search.html">Search</a></div>
+    <div><a href="menu.html">Menu</a></div>
+    <div class="active"><a href="shopping-bag.html">Shopping Bag</a></div>
+    <div><a href="profile.html">Profile</a></div>
+</div>
+
+  <!-- Bottom Menu -->
+  <nav class="bottom-menu">
+    <a href="home.html" class="menu-item">
+    
+      <span>Home</span>
+    </a>
+    <a href="search.html" class="menu-item">
+     
+      <span>Search</span>
+    </a>
+    <a href="menu.html" class="menu-item">
+     
+      <span>Menu</span>
+    </a>
+    <a href="shopping-bag.html" class="menu-item">
+   
+      <span>Shopping Bag</span>
+    </a>
+    <a href="profile.html" class="menu-item">
+    
+      <span>Profile</span>
+    </a>
+  </nav>
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="menu.html">Menu</a>
+    <a href="shopping-bag.html">Shoppingbag</a>
+    <a href="profile.html">Profile</a>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
